@@ -16,7 +16,7 @@ const Sections = () => {
 
     return (
             <div className='container  my-5'>
-                <div className='row  gx-5 gy-3 text-center'>
+                <div className='row  gx-2 gy-3 '>
                 {
                     sectionsPic.map(sectionPic =><Section key={sectionPic.name} sectionPic={sectionPic}></Section>)
                 }
