@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/NotFound/NotFound';
-import Banner from './pages/Home/Banner/Banner';
+import Home from './pages/Home/Home/Home';
 
 function App() {
   return (
@@ -13,7 +12,10 @@ function App() {
         <Header></Header>
         <Switch>
           <Route exact path='/'>
-            <Banner></Banner>
+            <Home></Home>
+          </Route>
+          <Route path='/home'>
+            <Home></Home>
           </Route>
 
           <Route path='*'>
