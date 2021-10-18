@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
 import initiliazeAuthentication from "../pages/Login/Firebase/firebase.init";
@@ -58,7 +58,27 @@ const useFirebase =() =>{
             } else{
                 setError('')
             }
+            isLoged ? startLogin(email, password) : createUser(email, password)
+            
+        }
 
+        const startLogin = (email, password) => {
+            signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                setError('')
+            }).catch(error => {
+                setError(error.message)
+            })
+
+        }
+
+        const loginUpdate = e =>{
+            setIsLoged(e.target.checked)
+            
+        }
+
+        const createUser = (email, password) =>{
             createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
@@ -69,12 +89,6 @@ const useFirebase =() =>{
                 setError(error.message)
             })
             console.log(email, password)
-            
-        }
-
-        const loginUpdate = e =>{
-            setIsLoged(e.target.checked)
-            
         }
 
         
@@ -88,7 +102,8 @@ const useFirebase =() =>{
             handleRegistration,
             handlePasswordChange,
             handleEmailChange,
-            loginUpdate
+            loginUpdate,
+            isLoged
 
         }
     
