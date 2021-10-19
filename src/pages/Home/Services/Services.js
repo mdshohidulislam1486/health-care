@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import OurService from '../OurService/OurService';
 
 const Services = () => {
@@ -9,6 +10,8 @@ const Services = () => {
         .then(data => setOurServices(data))
     },[])
     
+
+  
     return (
         <div className='container'>
             <h2 className='text-center text-success'>All you need to know !</h2>

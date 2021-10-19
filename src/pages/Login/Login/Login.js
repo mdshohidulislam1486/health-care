@@ -1,12 +1,21 @@
 import React from 'react';
 import { Button, Form} from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory, useLocation} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
     const {sinInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, loginUpdate, isLoged, user} = useAuth()
-    
-   console.log(handleRegistration)
+    const location = useLocation()
+
+    const redirect_url= location.state?.from || '/home'
+    const history = useHistory()
+    const handleGoogleLogin =()=>{
+        sinInUsingGoogle()
+        .then(result =>{
+            history.push(redirect_url)
+        })
+    }
+
 
     return (
         <div className='container'>
@@ -39,7 +48,7 @@ const Login = () => {
                 </Form> 
                 }
                 <div className='text-center'>
-                <Button onClick={sinInUsingGoogle} variant='success'> Log inwith Google <i className="fab fa-google text-warning "></i></Button>
+                <Button onClick={handleGoogleLogin} variant='success'> Login with Google <i className="fab fa-google text-warning "></i></Button>
                 </div>
             
         </div>

@@ -17,10 +17,10 @@ const useFirebase =() =>{
 
     const sinInUsingGoogle = ()=>{
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-        .then(result =>{
+         return signInWithPopup(auth, googleProvider)
+        /* .then(result =>{
             setUser(result.user)
-        })
+        }) */
     }
 
         // observer for user state change 
