@@ -14,7 +14,7 @@ const OurService = ({ourService}) => {
                     <h5>{name}</h5>
                     <p>{description.slice(0,250)}</p>
                     <NavLink to={`/serviceDetails/${ourService?.key}`}>
-                    <Button >Read more..</Button>
+                    <Button variant='warning' >Read more..</Button>
                     </NavLink>
                 
                 </div>

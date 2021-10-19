@@ -1,0 +1,8 @@
+
+.custom-about-img img{
+max-height:300px;
+ width: 100%;
+}
+.about-bg{
+    background-image: linear-gradient(to right, lightblue, gray );
+  }

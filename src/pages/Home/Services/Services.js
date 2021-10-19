@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 import OurService from '../OurService/OurService';
 
 const Services = () => {
     const [ourServices, setOurServices] = useState([])
     useEffect(()=>{
-        fetch('ourServices.json')
+        fetch('/ourServices.json')
         .then(res => res.json())
         .then(data => setOurServices(data.ourService))
     },[])

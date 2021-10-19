@@ -8,6 +8,8 @@ import AuthProvider from './context/AuthProvider';
 import Login from './pages/Login/Login/Login';
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import OurSpecialists from './pages/OurSpecialists/OurSpecialists';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -22,13 +24,19 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
-
+            <Route path='/specialist'>
+              <OurSpecialists></OurSpecialists>
+            </Route>
             <Route path='/login'>
                <Login></Login>
             </Route>
             <PrivateRoute exact path='/serviceDetails/:key'>
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+            <Route path='/about'>
+              <About></About>
+            </Route>
+            
 
             <Route path='*'>
               <NotFound></NotFound>
