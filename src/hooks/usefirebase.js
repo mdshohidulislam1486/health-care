@@ -1,6 +1,7 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
+import { flushSync } from "react-dom";
 import initiliazeAuthentication from "../pages/Login/Firebase/firebase.init";
 
 initiliazeAuthentication()
@@ -11,11 +12,12 @@ const useFirebase =() =>{
     const [password, setPassword] = useState('')
     const [error, setError] =useState('')
     const [isLoged, setIsLoged] =useState(false)
+    const [pageLoading, setPageLoading] = useState(true)
     
     const auth = getAuth();
 
-
     const sinInUsingGoogle = ()=>{
+        setPageLoading(true)
         const googleProvider = new GoogleAuthProvider();
          return signInWithPopup(auth, googleProvider)
         /* .then(result =>{
@@ -32,6 +34,7 @@ const useFirebase =() =>{
                 } else{
                     setUser({})
                 }
+                setPageLoading(false)
             })
             return ()=> unSubscribed;
 
@@ -40,6 +43,7 @@ const useFirebase =() =>{
         const logOut =()=>{
             signOut(auth)
             .then(()=>{})
+            .finally(()=>setPageLoading(false))
         }
 
         const handleEmailChange =e =>{
@@ -103,7 +107,9 @@ const useFirebase =() =>{
             handlePasswordChange,
             handleEmailChange,
             loginUpdate,
-            isLoged
+            isLoged,
+            setPageLoading,
+            pageLoading
 
         }
     

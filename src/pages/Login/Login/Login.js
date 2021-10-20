@@ -4,7 +4,7 @@ import { NavLink, useHistory, useLocation} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-    const {sinInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, loginUpdate, isLoged, user} = useAuth()
+    const {sinInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, loginUpdate, isLoged, user, setPageLoading} = useAuth()
     const location = useLocation()
 
     const redirect_url= location.state?.from || '/home'
@@ -14,6 +14,7 @@ const Login = () => {
         .then(result =>{
             history.push(redirect_url)
         })
+        .finally(() => {setPageLoading(false)})
     }
 
 
