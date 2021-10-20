@@ -1,71 +1,20 @@
-# Getting Started with Create React App
+# An ultimate medical care solution 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit us on  [Disha Medical Care](https://disha-medical-care.web.app).
 
-## Available Scripts
+## All you need to know
 
-In the project directory, you can run:
+The first ever endoscopic laser assisted surgery in Bangladesh was performed at Disha Hospital Limited on 8 November 2015.[5] Radical Cystoprostatectomy with Orthotopic Neobladder Reconstruction Surgery was performed by Dr M A Zulkifl at United Hospital Limited on a 60 year old patient.[6] Dr Ashim Kumar Sen Gupta successfully conducted the first chronomodulated chemotherapy on an elder patient with advanced colon cancer.[7] United Hospital Limited successfully carried out the first Transcatheter Valve Implant operation of implanting the aortic valve of a patient on July 25.[8]
 
-### `npm start`
+### Why shoul you choose us 
+* We are committed to delivering medical solutions for even the most difficult cases for the benefit of patients from around the world.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* We provide a hospital experience at par with global standards using cutting-edge technologies for invasive as well as non-invasive treatments.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Providing personalized care for the most comfortable healthcare experience is the very culture of Continental Hospitals.
 
-### `npm test`
+* Our commitment is to deliver the best in healthcare to patients from anywhere in the world. We pride ourselves on having given a new lease of life to numerous international patients.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Our International Patient Coordinators are devoted and ensure that all your needs are addressed through our special International Patient Care Program.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# healthcare-related-website-mdshohidulislam1486
