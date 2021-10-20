@@ -10,6 +10,7 @@ import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import OurSpecialists from './pages/OurSpecialists/OurSpecialists';
 import About from './pages/About/About';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             </Route>
 
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </>
