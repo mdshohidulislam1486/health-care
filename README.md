@@ -6,7 +6,7 @@ Visit us on  [Disha Medical Care](https://disha-medical-care.web.app).
 
 The first ever endoscopic laser assisted surgery in Bangladesh was performed at Disha Hospital Limited on 8 November 2015.[5] Radical Cystoprostatectomy with Orthotopic Neobladder Reconstruction Surgery was performed by Dr M A Zulkifl at United Hospital Limited on a 60 year old patient.[6] Dr Ashim Kumar Sen Gupta successfully conducted the first chronomodulated chemotherapy on an elder patient with advanced colon cancer.[7] United Hospital Limited successfully carried out the first Transcatheter Valve Implant operation of implanting the aortic valve of a patient on July 25.[8]
 
-### Why shoul you choose us 
+### Why shoul you choose us ?
 * We are committed to delivering medical solutions for even the most difficult cases for the benefit of patients from around the world.
 
 * We provide a hospital experience at par with global standards using cutting-edge technologies for invasive as well as non-invasive treatments.

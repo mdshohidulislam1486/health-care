@@ -4,10 +4,10 @@ import banner from '../../images/aboutUs.jpg'
 
 const About = () => {
     return (
-        <div className=' d-flex justify-content-center aling-items-center flex-column'>
+        <div className=' d-flex justify-content-center aling-items-center flex-column container'>
             <div className='custom-about-img img'><img className='' src={banner} alt="" /></div>
         <div className='row container'>
-            <div className=' about-bg col-12 col-md-8'> 
+            <div className=' about-bg col-12 col-md-8 mt-3'> 
                     <h2>Disha Medical Care LTD</h2>
                     <p>
                     Opening its doors in August 2006 and situated beside the picturesque Gulshan Lake, this hospital is one of the largest private sector healthcare facilities in Bangladesh. United Hospital has the capacity to house over 500 patients and has 12 state of the art operation theatres to cater to the needs of varied patient base.
@@ -26,11 +26,14 @@ const About = () => {
                     At United Hospital, providing our patients with a trusted and compassionate environment for healthcare is central to our mission. We draw strength from our purpose, which is above all to help and to heal. Our physicians, nurses and other caregivers & supporting staff are passionate about providing the right care at the right time, bringing hope and healing to our patients and their families. Patients trust us with their most valuable possession – their lives - and all of our caregivers recognize the immense responsibility that comes with that trust. 
                     </p>
                 </div>
-                <div className='col-12 col-md-4 row '>
-                   <img className=' col-12 col-md-6' src="https://thumbs.dreamstime.com/b/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed-male-senior-female-patient-32154012.jpg" alt="" />
-                    <img className=' col-12 col-md-6' src="https://media.istockphoto.com/photos/empty-modern-japanese-hospital-corridor-picture-id1049338924?k=20&m=1049338924&s=612x612&w=0&h=9bLMD2AQah0rCiu4UozuC8LxSWubJLKP0kmOCb24uos=" alt="" />
-                    <img className='col-12 col-md-6' src="https://images.pexels.com/photos/127873/pexels-photo-127873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-                    <img className=' col-12 col-md-6' src="https://thumbs.dreamstime.com/b/hospital-building-modern-parking-lot-59693686.jpg" alt="" /></div>
+                <div className='col-12 col-md-4 row gy-3 '>
+                   
+                   <img className=' col-12' src="https://thumbs.dreamstime.com/b/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed-male-senior-female-patient-32154012.jpg" alt="" />
+                    <img className=' col-12 ' src="https://thebangladeshtoday.com/wp-content/uploads/2021/04/DNCC-Dedicated-Corona-Hospital-2104171634.jpg" alt="" />
+                    <img className='col-12 ' src="https://st.depositphotos.com/1011643/1203/i/950/depositphotos_12037347-stock-photo-modern-hospital-ward.jpg" alt="" />
+                    <img className=' col-12 ' src="https://thumbs.dreamstime.com/b/hospital-building-modern-parking-lot-59693686.jpg" alt="" />
+                    
+                </div>
                     
 
             </div>

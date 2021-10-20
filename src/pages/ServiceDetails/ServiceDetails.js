@@ -52,12 +52,12 @@ useEffect(()=>{
     return (
         <div className='d-flex justify-content-center'>
             <div className='row container'>
-            <div className='d-flex flex-column  mt-3 col-12 col-md-6'>
+            <div className='d-flex flex-column  mt-3 col-12 col-md-8'>
                 <div><img className='img-fluid' src={singleServiceDetails?.img} alt="" /></div>
                 <h2>{singleServiceDetails?.name}</h2>
                 <p>{singleServiceDetails?.description}</p>
             </div>
-            <div className='col-12 col-md-6 row gy-3'>
+            <div className='col-12 row gy-3 justify-content-center'>
                 {
                    myCards.map(card=><SingleCard key={card.name} card={card}></SingleCard>)
                 }
