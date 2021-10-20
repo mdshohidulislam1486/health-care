@@ -13,7 +13,7 @@ const OurSpecialists = () => {
         <div className='d-flex flex-wrap justify-content-center'>
             {
              ourSpecialists?.map(singelSpecialist =><OurSpecialist
-             key={singelSpecialist.key}
+             key={singelSpecialist.name}
              singelSpecialist={singelSpecialist}
              >
 

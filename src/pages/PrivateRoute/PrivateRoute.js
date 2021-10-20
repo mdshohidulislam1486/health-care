@@ -7,7 +7,9 @@ const PrivateRoute = ({children, ...rest} ) => {
 
     const {user, pageLoading} = useAuth();
     if(pageLoading){
-        return <Spinner className='text-center' animation="border" variant="warning"/>
+        return <>
+        <div className='text-center'><Spinner animation="border" variant="warning"/></div>
+        </>
     }
 
     
